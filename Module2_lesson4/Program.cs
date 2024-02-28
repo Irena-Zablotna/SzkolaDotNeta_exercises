@@ -26,20 +26,10 @@ namespace Module2_lesson4
             age = int.Parse(Console.ReadLine());
             Console.WriteLine(" What is your sex, you can choose \"m\" for male or \"f\" for female");
             sex = char.Parse(Console.ReadLine());
-            if (sex =='f') 
-            {
-                description = "female";
-                    }
-            else
-            {
-                description = "male";
-;            }
             Console.WriteLine("Write your tax Id");
             taxId = Console.ReadLine();
             Console.WriteLine("Write your employee Id");
             employeeId = long.Parse(Console.ReadLine());
-            Console.Write($"Hello {name} {surname}!\r\n You are {age} old and your sex is {description}.\r\n Your tax id is {taxId} " +
-                $"and your employee Id is {employeeId}. Press any key to exit");
             Console.ReadKey();
 
             //EXERCISE 2
@@ -83,13 +73,13 @@ namespace Module2_lesson4
             bool pizza = bool.Parse(Console.ReadLine());
             if (pizza)
             {
-                str2 = "like";
+                str2 = "like pizza, me too ;-)!";
             }
             else
             {
-                str2 = "don't like";
+                str2 = "don't like pizza. What a pity!";
             }
-            Console.WriteLine($"Hello {name1} {firstChar}. Your phone number is {phone} and your weight is {weight}. \r\n You {str2} pizza");
+            Console.WriteLine($"Hello {name1} {firstChar}. Your phone number is {phone} and your weight is {weight}. \r\n You {str2}");
             Console.ReadKey(); 
 
         }
